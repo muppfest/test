@@ -103,6 +103,8 @@ require($tpl_path . "searchnav.tpl.php");
             echo "";
         }
 
+        echo test test;
+
         echo "</div>";
         echo "<div class='col-sm-3'>";
             echo "<ul class='facts'>";
