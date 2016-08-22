@@ -1,0 +1,311 @@
+body {
+    background-color: #f1f1f1;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+nav {
+    margin: 0;
+}
+.navlogo {
+
+}
+.jumbotron {
+    background-color: #fff;
+}
+.form-search {
+    
+}
+.glyph-burger {
+    color: #f2f2f2;
+}
+ul.nav a:hover { 
+    background-color: unset;
+}
+ul.nav a:visited {
+    background-color: unset;
+}
+
+.topnav {
+    background-color: #1d2731;  
+}
+.topnav ul {
+	list-style:none;
+    padding: 0 0 0 15px;
+}
+.navbar-right li {
+}
+.topnav li {
+	display: inline-block; 
+    
+}
+.topnav li:last-child {
+   
+}
+.topnav li:hover {
+    background-color: #1d2731;   
+}
+.topnav a {
+	color: #f2f2f2;
+    transition-duration: 0.5s;
+    font-size: 1.15em;
+}
+.topnav a:hover {
+    color: #fff;
+}
+.glyphicon-search {
+    padding-right:15px;
+}
+.content {
+    height: 350px;
+    color: #1d2731;
+    margin-bottom: 25px;
+    background-color: #fff;
+}
+.content h4{
+    color: #222;
+}
+.catnav ul {
+    list-style: none;
+    font-size: 1em;
+    padding: 0 0 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.catnav a {
+    color: #222;
+    font-size: 1em;
+    text-transform: none;
+}
+.catnav a:hover {
+}
+.footer {
+    background-color: #1d2731;
+    border-top: 1px solid #222;
+    color: #d2d2d2;
+    padding: 50px 0 50px 0;
+    margin-top: 50px;
+}
+.footer ul {
+}
+.footer a {
+    color: #d2d2d2;
+}
+.footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.form-search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.form-radio li {
+    display: inline;
+    padding: 10px;
+}
+.form-radio ul {
+    text-align: center;
+    padding: 10px;
+}
+.form-radio label:hover {
+    cursor: pointer;
+}
+.form-radio-add li {
+    display: inline;
+    padding: 10px 20px 10px 0px;
+}
+.form-radio-add ul {
+    padding: 10px 10px 10px 0px;
+}
+.form-radio-add label:hover {
+    cursor: pointer;
+}
+.footer h4 {
+    color: #fff;
+}
+ul.navbar-nav {
+    
+}
+.navbar-right {
+    margin-right: 0px;
+}
+.glyphicon-user {
+    padding-right: 8px;
+}
+.glyphicon-search {
+    color: #fff;
+    margin-right: -12px;
+}
+.btn-search {
+    background-color: #1d2731;
+    width: 70px;
+}
+.btn-search:hover {
+    background-color: #4a525a;
+}
+.btn-readmore {
+    margin: 25px 0px 0px 0px;
+    color: #fff;
+    background-color: #1d2731;
+}
+.btn-readmore:hover {
+    color: #fff;
+    background-color: #4a525a;
+}
+.btn-readmore:active {
+    color: #fff;
+}
+.btn-readmore:visited {
+    color: #fff;
+}
+.ad-row {
+    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.ad-carousel {
+    padding: 20px 0px 20px 0px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.ad-img {
+    border: 1px solid #ccc;
+}
+.ad-info-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0px 0px 0px 0px;
+    margin-top: 20px;
+}
+.ad-info-row {
+    padding: 0px 0px 0px 0px;
+}
+.ad-facts {
+    display: inline-block;
+    float: left;
+}
+
+.ad-count {
+    padding: 25px 0px 25px 0px;
+}
+
+.right-side {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px -15px 0px 10px;
+    padding: 10px;
+}
+
+ul.contact {
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+}
+
+ul.facts {
+    list-style: none;
+    padding: 5px 5px 5px 0px;
+}
+.search-nav {
+    padding-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.price {
+    font-weight: bold;
+}
+.ad-description {
+    padding: 10px 0px 0px 0px;
+}
+.ad-price {
+    font-weight: bold;
+    padding: 0px 0px 10px 0px;
+}
+.ad-title {
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+}
+ul.ad-facts {
+    list-style: none;
+}
+li.ad-facts {
+    
+}
+#uploadImg img {
+    width: 225px;
+    height: auto;
+    margin: 10px 0 10px 0;
+}
+#addImg {
+    background-color: #1d2731;
+    color: #fff;
+    width: 225px;
+}
+#addImg:hover {
+    background-color: #4a525a;
+}
+#removeImg {
+    background-color: #1d2731;
+    color: #fff;
+    width: 225px;
+}
+#removeImg:hover {
+    background-color: #4a525a;
+}
+#postAd {
+    background-color: #1d2731;
+    color: #fff;
+}
+#postAd:hover {
+    background-color: #4a525a;
+}
+
+@media(max-width:1200px){
+ul.nav a:hover {
+    border:hidden;    
+}
+.topnav a {
+    transition-duration: 0s; 
+    }
+.topnav li {
+border: hidden;
+float:none;
+display:block;  
+text-align:center;
+}
+.topnav li:hover {
+    border:hidden;
+    background-color: unset;
+    font-weight: 600;
+}
+.topnav li:last-child {
+    border:hidden;
+}
+.topnav {
+    border:hidden;    
+}
+.footer li {
+    
+    }
+.form-search {
+    
+    }
+.ad-container {
+    width: auto;
+    }
+.ad-img-container {
+    width: auto;
+    }
+.btn-search {
+    width: 250px;
+    }
+ul.date {
+    float:left;
+    }
+}
+
