@@ -224,35 +224,37 @@ return $link;
 function paginator($pagenumber, $totalpages) {
 
     if(postCheck()) {
-        $link = '?' . postCheck() . 'pnumber=%d';
+        $link = '?' . postCheck() . 'pnumber=';
     }else{
-        $link = '?pnumber=%d';
+        $link = '?pnumber=';
     } 
-$pagerContainer = '<div style="width: 300px;">';   
-if( $totalpages != 0 ) 
-{
-  if( $pagenumber == 1 ) 
-  { 
-    $pagerContainer .= ''; 
-  } 
-  else 
-  { 
-    $pagerContainer .= sprintf( '<a href="' . $link . '"> &#171; Föregående sida</a>', $pagenumber - 1 ); 
-  }
-  $pagerContainer .= ' <span> page <strong>' . $pagenumber . '</strong> from ' . $totalpages . '</span>'; 
-  if( $pagenumber == $totalpages ) 
-  { 
-    $pagerContainer .= ''; 
-  }
-  else 
-  { 
-    $pagerContainer .= sprintf( '<a href="' . $link . '"> Nästa sida &#187; </a>', $pagenumber + 1 ); 
-  }           
-}                   
-$pagerContainer .= '</div>';
 
-echo $pagerContainer;
+    echo "<ul class='pagination'>";
+    
+    if($totalpages > 1) {
+        if($pagenumber > 1) {
+            echo "<li><a href='" . $link . ($pagenumber-1) . "'>&#171; Förra sidan</a></li>";
+        }else{echo"";}
+    for($i = 1; $i <= $totalpages; $i++) {
+        echo "<li"; 
+            if($pagenumber == $i) {
+                echo " class='active'";
+            }
+        echo "><a href='" . $link . $i . "'>" . $i . "</a></li>";
+    }
 
+    if($totalpages == $pagenumber) {
+        echo "<li><a href='" . $link . "1'>Första sidan</a></li>";
+    }else{
+        echo "<li><a href='" . $link . ($pagenumber+1) . "'>&#187; Nästa sida</a></li>";
+        echo "<li><a href='" . $link . $totalpages . "'>Sista sidan</a></li>";
+    }
+    
+    }else{
+        echo "";
+    }
+
+    echo "</ul>";
 }
 
 ?>

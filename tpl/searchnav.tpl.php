@@ -1,6 +1,6 @@
         <div class="container">
             <div class="row search-nav">
-            <form action="?page=search" method="get" class="form-inline">
+            <form method="get" class="form-inline">
             <center>
             <div class="row form-search">
             <div class="form-group">

@@ -4,15 +4,31 @@ require($tpl_path . "nav.tpl.php");
 require($tpl_path . "searchnav.tpl.php");
 
     
+                echo "<div class='row'><div class='col-sm-9'>";
+
+                ad_count($search_count);
+                
+                echo "</div><div class='col-sm-3'>";
+
+                echo "<form method='get'>";
+                echo "<div class='form-group'><select name='sort' class='form-control' onchange='this.form.submit()'>";
+
+                echo "<option value='1'"; 
+                    if(!isset($_GET['sort'])) { echo " selected";}else{echo "";}
+                echo ">Nyast först</option>";
+                echo "<option value='2'>Äldst först</option></select></form></div>";
+                
+                echo "</div></div>";
+
                 if(empty($search_result)) {
-                    echo "<h4>Inga träffar</h4>";
+                    echo "";
                 }
 
                 else {
                 
                 $pagenumber = !empty($_GET['pnumber']) ? (int) $_GET['pnumber'] : 1;
                 $total = $search_count;
-                $limit = 2;
+                $limit = 1;
                 $totalpages = ceil($total/$limit);
                 $pagenumber = max($pagenumber, 1);
                 $pagenumber = min($pagenumber, $totalpages);
@@ -81,8 +97,6 @@ require($tpl_path . "searchnav.tpl.php");
                 }
 
             paginator($pagenumber, $totalpages);
-
-                        ad_count($search_count);
                 
             }
 
